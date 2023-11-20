@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Módulo CBTU Formulário Onde Estou</name>
+    <author>Moisés Abreu</author>
+    <version>1.0.0</version>
+    <description>Módulo que exibe o formulário Onde Estou</description>
+    <files>
+        <filename>mod_cbtuondeestou.xml</filename>
+        <filename module="mod_cbtuondeestou">mod_cbtuondeestou.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+
+
+
+
+    <config>
+
+
+    </config>
+</extension>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field name="search" type="text" hint="COM_CBTURESOLUCOES_SEARCH_FILTER_SUBMIT"
+               label="COM_USERS_FILTER_SEARCH_DESC"
+               class="js-stools-search-string" />
+
+        <field name="diretoria" type="list" onchange="this.form.submit();" label="Diretoria">
+  <option value="">COM_CBTURESOLUCOES_CONTENTS_DIRETORIA_OPTION_0</option>
+  <option value="1">COM_CBTURESOLUCOES_CONTENTS_DIRETORIA_OPTION_1</option>
+  <option value="2">COM_CBTURESOLUCOES_CONTENTS_DIRETORIA_OPTION_2</option>
+  <option value="3">COM_CBTURESOLUCOES_CONTENTS_DIRETORIA_OPTION_3</option>
+  <option value="4">COM_CBTURESOLUCOES_CONTENTS_DIRETORIA_OPTION_4</option>
+  <option value="5">COM_CBTURESOLUCOES_CONTENTS_DIRETORIA_OPTION_5</option>
+  <option value="6">COM_CBTURESOLUCOES_CONTENTS_DIRETORIA_OPTION_6</option>
+  <option value="7">COM_CBTURESOLUCOES_CONTENTS_DIRETORIA_OPTION_7</option>
+  <option value="8">COM_CBTURESOLUCOES_CONTENTS_DIRETORIA_OPTION_8</option>
+  <option value="9">COM_CBTURESOLUCOES_CONTENTS_DIRETORIA_OPTION_9</option>
+  <option value="10">COM_CBTURESOLUCOES_CONTENTS_DIRETORIA_OPTION_10</option>
+  <option value="11">COM_CBTURESOLUCOES_CONTENTS_DIRETORIA_OPTION_11</option>
+  <option value="12">COM_CBTURESOLUCOES_CONTENTS_DIRETORIA_OPTION_12</option>
+  <option value="13">COM_CBTURESOLUCOES_CONTENTS_DIRETORIA_OPTION_13</option>
+        </field>
+
+        <field name="ano" type="text" label="Ano" hint="Filtro por Ano" class="js-stools-search-string" />
+
+    </fields>
+</form>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Módulo CBTU Destaques</name>
+    <author>Moisés Abreu</author>
+    <version>1.0.0</version>
+    <description>Módulo que exibe artigos na home</description>
+    <files>
+        <filename>mod_cbtudestaques.xml</filename>
+        <filename module="mod_cbtudestaques">mod_cbtudestaques.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+
+                        <field
+                        name="itemid_menu"
+                        type="text"
+                        label="Item Id do Menu"
+                        size="5"
+                        />
+                
+
+                        <field
+                       name="categoria1"
+                       type="text"
+                       label="Id Categoria 1"
+                       size="5"
+                       />
+                         <field
+                       name="categoria2"
+                       type="text"
+                       label="Id Categoria 2"
+                       size="5"
+                       />
+                         <field
+                       name="categoria3"
+                       type="text"
+                       label="Id Categoria 3"
+                       size="5"
+                       />
+                        <field
+                       name="img_default"
+                       type="media" 
+                       directory=""
+                       label="Imagem Default para as postagens"
+                       />
+                    
+                        <field
+                       name="caracter"
+                       type="text"
+                       label="QTD de Caracteres"
+                       size="5"
+                       />
+                     
+
+            </fieldset>
+        </fields>
+    </config>
+</extension>

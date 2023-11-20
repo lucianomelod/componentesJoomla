@@ -1,0 +1,83 @@
+<?php 
+// No direct access
+defined('_JEXEC') or die; 
+
+$quantidade = $params->get('quantidade', '0');
+$anteriores = $params->get('anteriores', '0');
+
+
+?>
+
+
+		<div class="scroll-div scroll-orange" id="resolucoes">
+			<div class="title-gov-page">
+				<h2 class="four">resoluções</h2>
+                <div align="right"><p>&nbsp;</p>
+                <!--<a target="_blank" href="index.php/pt/resolucoes-novo">Anteriores</a>-->
+                <a target="_blank" href="<?php echo "$anteriores"; ?>">Anteriores</a>                
+                </div>
+			</div>
+			<!-- .title-gov-page -->
+			<div class="scroll-content">
+
+					<ul>
+						<?php
+							$db =& JFactory::getDBO();
+						//	$db->setQuery("SELECT * FROM #__cbturesolucoes ORDER BY dataresolucao DESC LIMIT $quantidade");
+                            $db->setQuery("SELECT * FROM #__cbturesolucoes ORDER BY dataresolucao DESC, numresolucao DESC LIMIT $quantidade");
+							$articles = $db->loadAssocList();
+							$articles_num = count($articles);
+							for ($i=0;$i<$articles_num;$i++) {
+
+
+                                switch ($articles[$i]["diretoria"]) {
+                                    case 1:
+                                        $diretoria = "CA";
+                                        break;
+                                    case 2:
+                                        $diretoria = "DIR";
+                                        break;
+                                    case 3:
+                                        $diretoria = "PR";
+                                        break;
+                                    case 4:
+                                        $diretoria = "DT";
+                                        break;
+                                    case 5:
+                                        $diretoria = "DA";
+                                        break;
+                                    case 6:
+                                        $diretoria = "DP";
+                                        break;
+                                    case 7:
+                                        $diretoria = "BH";
+                                        break;
+                                    case 8:
+                                        $diretoria = "JP";
+                                        break;
+                                    case 9:
+                                        $diretoria = "MC";
+                                        break;
+                                    case 10:
+                                        $diretoria = "NT";
+                                        break;
+                                    case 11:
+                                        $diretoria = "RC";
+                                        break;
+                                    case 12:
+                                        $diretoria = "SV";
+                                        break;
+                                }
+
+                                ?>
+
+								<li> <?php echo $diretoria."-".$articles[$i]["numresolucao"]." De ".date_format(date_create($articles[$i]['dataresolucao']), 'd/m/Y')." <br/> - <a href='".JURI::root()."images/resolucao/".$articles[$i]['resolucao']."' target='_blank'>".$articles[$i]["assunto"]."</a>" ?></li>
+
+
+							<?php } ?>
+							
+
+					</ul>
+				
+			</div>
+		</div>

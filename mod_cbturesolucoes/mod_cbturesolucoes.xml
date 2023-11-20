@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Módulo CBTU Resoluções</name>
+    <author>Moisés Abreu</author>
+    <version>1.0.0</version>
+    <description>Módulo que exibe as Resoluções da Intranet</description>
+    <files>
+        <filename>mod_cbturesolucoes.xml</filename>
+        <filename module="mod_cbturesolucoes">mod_cbturesolucoes.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+
+
+
+
+    <config>
+
+        <fields name="params">
+            <fieldset name="basic">
+
+                        <field
+                       name="quantidade"
+                       type="text"
+                       label="Quantide de Resoluções"
+                       size="5"
+                       />
+
+                        <field
+                        name="anteriores"
+                        type="text"
+                        label="URL Resoluções Anteriores"
+                        size="5"
+                        />
+
+
+
+            </fieldset>
+        </fields>
+
+    </config>
+</extension>

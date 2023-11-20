@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+/**
+ * @copyright	Copyright © 2018 - All rights reserved.
+ * @license		GNU General Public License v2.0
+ * @generator	http://xdsoft/joomla-module-generator/
+ */
+-->
+<extension type="module" method="upgrade" client="site">
+	<name>MOD_CBTU_INFORHME</name>
+	<creationDate>Oct 2018</creationDate>
+	<author>Luciano Melo</author>
+	<authorEmail>lucianomelod@gmail.com</authorEmail>
+	<authorUrl>http://www.lucianomelodesign.com.br</authorUrl>
+	<copyright>Copyright © 2018 - All rights reserved.</copyright>
+	<license>GNU General Public License v2.0</license>
+	<version>1.0.1</version>
+	<description>MOD_CBTU_INFORHME_DESCRIPTION</description>
+	<files>
+		<filename module="mod_cbtuinforhme">mod_cbtuinforhme.php</filename>
+		<filename>mod_cbtuinforhme.xml</filename>
+		<filename>index.html</filename>
+		<filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+	</files>
+	<config>
+
+        <fields name="params">
+            <fieldset name="basic">
+
+						<field
+                       name="categoria1"
+                       type="text"
+                       label="Id Categoria 1 das notícias"
+                       size="5"
+                       />
+
+                        <field
+                       name="categoria2"
+                       type="text"
+                       label="Id Categoria 2 das notícias"
+                       size="5"
+                       />
+
+                        <field
+                       name="categoria3"
+                       type="text"
+                       label="Id Categoria 3 das notícias"
+                       size="5"
+                       />
+
+                        <field
+                       name="categoria4"
+                       type="text"
+                       label="Id Categoria 4 das notícias"
+                       size="5"
+                       />
+
+                        <field
+                       name="categoria5"
+                       type="text"
+                       label="Id Categoria 5 das notícias"
+                       size="5"
+                       />
+
+                        <field
+                       name="categoria6"
+                       type="text"
+                       label="Id Categoria 6 das notícias"
+                       size="5"
+                       />
+
+                        <field
+                       name="categoria7"
+                       type="text"
+                       label="Id Categoria 7 das notícias"
+                       size="5"
+                       />
+
+
+                        <field
+                       name="quantidade"
+                       type="text"
+                       label="Quantide de Informes"
+                       size="5"
+                       />
+
+                        <field
+                        name="anteriores"
+                        type="text"
+                        label="URL Informes Anteriores"
+                        size="5"
+                        />
+
+
+
+            </fieldset>
+        </fields>
+
+    </config>
+	<languages folder="language">
+		<language tag="pt-BR">pt-BR/pt-BR.mod_cbtuinforhme.sys.ini</language>
+		<language tag="pt-BR">pt-BR/pt-BR.mod_cbtuinforhme.ini</language>
+	</languages>
+</extension>

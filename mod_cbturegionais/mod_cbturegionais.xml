@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Módulo CBTU Regionais</name>
+    <author>Moisés Abreu</author>
+    <version>1.0.0</version>
+    <description>Módulo que exibe as Regionais na home</description>
+    <files>
+        <filename>mod_cbturegionais.xml</filename>
+        <filename module="mod_cbturegionais">mod_cbturegionais.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+
+
+
+
+    <config>
+
+        <fields name="params">
+            <fieldset name="basic">
+
+
+			<field name="tipo" type="list" default="" label="Escolha o formato das notícias" description="">
+			  <option value="regional">Regional</option>
+			  <option value="principal">Principal</option>
+			</field>
+
+                        <field
+                        name="item_id_menu"
+                        type="text"
+                        label="Item Id Menu"
+                        size="5"
+                        />
+
+
+                      <field
+                       name="categoria_regional"
+                       type="text"
+                       label="Id Categoria Regional"
+                       size="5"
+                       />
+
+
+                        <field
+                       name="img_default"
+                       type="media" 
+                       directory=""
+                       label="Imagem Default Regional"
+                       />
+
+
+
+                        <field
+                       name="titulo_Custom1"
+                       type="text"
+                       label="Título Parte 1"
+                       />
+
+
+
+                       <field
+                       name="titulo_Custom2"
+                       type="text"
+                       label="Título Parte 2"
+                       />
+
+                       <field
+                       name="titulo_bloco1"
+                       type="text"
+                       label="Título Bloco 1"
+                       />
+
+                        <field
+                       name="categoria_bh"
+                       type="text"
+                       label="Id Categoria Bloco 1"
+                       size="5"
+                       />
+                        <field
+                       name="img_bh"
+                       type="media" 
+                       directory=""
+                       label="Imagem Default Bloco 1"
+                       />
+
+                       <field
+                       name="titulo_bloco2"
+                       type="text"
+                       label="Título Bloco 2"
+                       />
+
+
+                         <field
+                       name="categoria_jp"
+                       type="text"
+                       default=""
+                       label="Id Categoria Bloco 2"
+                       size="5"
+                       />
+                          <field
+                       name="img_jp"
+                       type="media" 
+                       directory=""
+                       label="Imagem Default Bloco 2"
+                       />
+
+                       <field
+                       name="titulo_bloco3"
+                       type="text"
+                       label="Título Bloco 3"
+                       />
+
+
+                         <field
+                       name="categoria_mc"
+                       type="text"
+                       default=""
+                       label="Id Categoria Bloco 3"
+                       size="5"
+                       />
+                        <field
+                       name="img_mc"
+                       type="media" 
+                       directory=""
+                       label="Imagem Default Bloco 3"
+                       />
+
+                       <field
+                       name="titulo_bloco4"
+                       type="text"
+                       label="Título Bloco 4"
+                       />
+
+
+                         <field
+                       name="categoria_nt"
+                       type="text"
+                       default=""
+                       label="Id Categoria Bloco 4"
+                       size="5"
+                       />
+                        <field
+                       name="img_nt"
+                       type="media" 
+                       directory=""
+                       label="Imagem Default Bloco 4"
+                       />
+
+                       <field
+                       name="titulo_bloco5"
+                       type="text"
+                       label="Título Bloco 5"
+                       />
+
+
+                          <field
+                       name="categoria_rc"
+                       type="text"
+                       default=""
+                       label="Id Categoria Bloco 5"
+                       size="5"
+                       />
+                        <field
+                       name="img_rc"
+                       type="media" 
+                       directory=""
+                       label="Imagem Default Bloco 5"
+                       />
+
+            </fieldset>
+        </fields>
+
+    </config>
+</extension>

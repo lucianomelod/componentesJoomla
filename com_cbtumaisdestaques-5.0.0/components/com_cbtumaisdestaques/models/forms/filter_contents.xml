@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+    
+        <field name="search" type="text" hint="COM_CBTUMAISDESTAQUES_SEARCH_FILTER_SUBMIT"
+               label="COM_USERS_FILTER_SEARCH_DESC"
+               class="js-stools-search-string" />
+
+        <field name="catid" type="sql" label="COM_CBTUMAISDESTAQUES_FORM_LBL_CONTENT_CATID" query="SELECT '' AS `id`, 'COM_CBTUMAISDESTAQUES_CONTENTS_CATID_FILTER' AS `val` UNION SELECT `id` AS `id`, `title` AS val FROM `#__categories` WHERE id IN (9, 11, 12, 14, 15, 16)" key_field="id" value_field="val" class="inputbox" onchange="this.form.submit()" translate="true"/>
+
+
+        <!--<field name="datac" type="text" hint="COM_CBTUMAISDESTAQUES_DATAC_FILTER_SUBMIT"
+               label="COM_USERS_FILTER_DATAC_DESC"
+               class="js-stools-datac-string" />-->
+
+        <field name="datac" type="calendar" label="Select a date" description=""
+  class="input-small" required="false" filter="user_utc"
+  showtime="false" todaybutton="false" filltable="false" translateformat="true" />
+
+
+    </fields>
+</form>
